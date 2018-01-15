@@ -34,7 +34,7 @@ public class SensorInfoWriteFile {
                 fp.createNewFile();
                 PrintWriter pw = new PrintWriter(new FileWriter(fp, true));
 
-                //pw.write(splitStringsSensors.length + "\n");
+                pw.write(splitStringsSensors.length + "\n");
                 //Write into file
                 for (int i = 0; i < splitStringsSensors.length; i++){
                     for (int j = 0; j < 8; j++){
@@ -55,15 +55,15 @@ public class SensorInfoWriteFile {
 
         //if the file exists, there is no need to create another one
         //as the phone sensors are not removable/interchangeable
-        if (internalFileExists())
+       // if (internalFileExists())
             try {
 
                 // Create a file to export the sensor info.
-                File fp = sensorFileInternal(context);
+                File fp = sensorFileExternal();
                 fp.createNewFile();
                 PrintWriter pw = new PrintWriter(new FileWriter(fp, true));
 
-                //pw.write(splitStringsSensors.length + "\n");
+                pw.write(splitStringsSensors.length + "\n");
                 for (int i = 0; i < splitStringsSensors.length; i++){
                     for (int j = 0; j < 8; j++){
                         pw.write(splitStringsSensors[i][j]);

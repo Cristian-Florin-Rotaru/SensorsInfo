@@ -48,13 +48,14 @@ public class MainActivity extends FragmentActivity {
         SensorInfoRetrieve sir = new SensorInfoRetrieve(context);
 
         SensorInfo si = new SensorInfo();
+
         if (!siwf.internalFileExists())
             siwf.writeFile(si.sensors(sensorsList));
 
-        if (!siwf.externalFileExists())
+      /*  if (!siwf.externalFileExists())
             siwf.writeFileExternal(si.sensors(sensorsList));
-
-        if (siwf.externalFileExists())
+*/
+        if (siwf.internalFileExists())
             siwf.writeFileExternal(sir.getSensorInfo());
 
 

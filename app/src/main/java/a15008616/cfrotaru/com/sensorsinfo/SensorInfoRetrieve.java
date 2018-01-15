@@ -38,7 +38,7 @@ public class SensorInfoRetrieve {
         try {
 
 
-            BufferedReader br = new BufferedReader(new FileReader(siwf.sensorFileExternal()));
+            BufferedReader br = new BufferedReader(new FileReader(siwf.sensorFileInternal(context)));
             sensorsNumber = Integer.parseInt(br.readLine());
             sensorInfo = new String[sensorsNumber][8];
             for (int i = 0; i < sensorsNumber; i++)
