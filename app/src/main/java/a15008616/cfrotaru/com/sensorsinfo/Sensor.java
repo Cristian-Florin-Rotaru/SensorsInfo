@@ -2,6 +2,9 @@ package a15008616.cfrotaru.com.sensorsinfo;
 
 import java.util.UUID;
 
+/**
+ * Because of the lack of further development on the app, this class has no use in the actual program
+ */
 
 public class Sensor {
 

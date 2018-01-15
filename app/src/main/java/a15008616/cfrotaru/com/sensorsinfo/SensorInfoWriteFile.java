@@ -51,7 +51,7 @@ public class SensorInfoWriteFile {
 
         //if the file exists, there is no need to create another one
         //as the phone sensors are not removable/interchangeable
-       // if (internalFileExists())
+        //if (internalFileExists())
             try {
 
                 // Create a file to export the sensor info.
@@ -69,7 +69,7 @@ public class SensorInfoWriteFile {
                 }
                 pw.close();
             } catch (Exception e){
-                Log.d("Exception12342", "found12321");
+
             }
     }
     public File sensorFileInternal(Context context){

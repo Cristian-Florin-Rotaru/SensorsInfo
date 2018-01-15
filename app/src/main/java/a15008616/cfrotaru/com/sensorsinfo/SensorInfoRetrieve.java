@@ -4,15 +4,8 @@ import android.content.Context;
 import android.hardware.Sensor;
 import android.hardware.SensorManager;
 import android.os.Environment;
-import android.widget.TextView;
-
-import org.w3c.dom.Text;
-
 import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileInputStream;
 import java.io.FileReader;
-import java.io.InputStreamReader;
 import java.util.List;
 
 
