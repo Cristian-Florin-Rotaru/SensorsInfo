@@ -16,9 +16,6 @@ import java.io.InputStreamReader;
 import java.util.List;
 
 
-/**
- * Created by cryss on 14-Jan-18.
- */
 
 public class SensorInfoRetrieve {
     Context context;

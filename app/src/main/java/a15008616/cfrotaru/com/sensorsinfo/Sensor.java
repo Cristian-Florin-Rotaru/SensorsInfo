@@ -2,9 +2,6 @@ package a15008616.cfrotaru.com.sensorsinfo;
 
 import java.util.UUID;
 
-/**
- * Created by cryss on 15-Jan-18.
- */
 
 public class Sensor {
 

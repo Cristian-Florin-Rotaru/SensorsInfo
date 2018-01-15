@@ -8,10 +8,6 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.PrintWriter;
 
-/**
- * Created by cryss on 14-Jan-18.
- */
-
 public class SensorInfoWriteFile {
     Context context;
 

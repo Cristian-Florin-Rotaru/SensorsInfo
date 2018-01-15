@@ -5,10 +5,6 @@ import android.hardware.Sensor;
 
 import java.util.List;
 
-/**
- * Created by cryss on 14-Jan-18.
- */
-
 public class SensorInfo {
 
     //Method to format the sensor information so it can be easily used

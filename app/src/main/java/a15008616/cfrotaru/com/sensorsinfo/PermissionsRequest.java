@@ -7,9 +7,7 @@ import android.content.pm.PackageManager;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 
-/**
- * Created by cryss on 15-Jan-18.
- */
+
 
 public class PermissionsRequest {
     Context context;
