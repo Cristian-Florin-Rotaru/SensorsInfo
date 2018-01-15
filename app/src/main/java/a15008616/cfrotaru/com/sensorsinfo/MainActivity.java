@@ -30,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //As it is not adapted for the landscape mode, the screen orientation
+        //was forced to portrait
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         nameTxtView         = (TextView) findViewById(R.id.nameTxtView);
@@ -87,9 +89,6 @@ public class MainActivity extends AppCompatActivity {
             }
 
         });
-
-
-
 
 
         saveFile(this);
