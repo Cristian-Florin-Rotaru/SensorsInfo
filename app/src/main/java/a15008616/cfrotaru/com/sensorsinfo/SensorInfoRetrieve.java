@@ -1,6 +1,8 @@
 package a15008616.cfrotaru.com.sensorsinfo;
 
 import android.content.Context;
+import android.hardware.Sensor;
+import android.hardware.SensorManager;
 import android.os.Environment;
 import android.widget.TextView;
 
@@ -11,7 +13,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileReader;
 import java.io.InputStreamReader;
-
+import java.util.List;
 
 
 /**
@@ -25,8 +27,15 @@ public class SensorInfoRetrieve {
         this.context = context;
     }
 
+    //Method to get the raw information about sensors
+    public List<Sensor> getSystemSensorInfo (){
+        SensorManager oSM = (SensorManager) context.getSystemService(Context.SENSOR_SERVICE);
+        List<Sensor> sensorsList = oSM.getSensorList(Sensor.TYPE_ALL);
+        return sensorsList;
+    }
+
     //Method to return a String[][] with the sensors information written in internal storage
-    public String[][] getSensorInfo (){
+    public String[][] getFileSensorInfo(){
 
 
 

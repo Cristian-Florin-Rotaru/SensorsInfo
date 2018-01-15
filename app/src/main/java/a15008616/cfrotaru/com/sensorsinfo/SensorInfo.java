@@ -121,8 +121,7 @@ public class SensorInfo {
                 noDupStrFinal[i] = noDupString[i];
 
 
-
-
         return noDupStrFinal;
     }
+
 }
